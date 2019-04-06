@@ -1,0 +1,56 @@
+{
+  "name": "@forensic-js/regex",
+  "version": "0.0.0",
+  "description": "Acollection of utility methods useful for day to day project and library development",
+  "main": "lib/index",
+  "typings": "typings/index",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "commit": "git-cz",
+    "test": "BABEL_ENV=test jest",
+    "watch-test": "BABEL_ENV=test jest --watch",
+    "build": "rimraf dist lib typings && tsc && BABEL_ENV=build rollup --config",
+    "report-coverage": "jest --coverage --coverageReporters=text-lcov | coveralls",
+    "semantic-release": "semantic-release"
+  },
+  "author": "Harrison Ifeanyichukwu <Harrisonifeanyichukwu@gmail.com> (https://github.com/harrison-ifeanyichukwu)",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "7.4.0",
+    "@babel/plugin-proposal-class-properties": "^7.4.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.4.0",
+    "@babel/preset-env": "7.4.0",
+    "@babel/preset-typescript": "7.3.3",
+    "@types/jest": "24.0.11",
+    "@typescript-eslint/eslint-plugin": "1.6.0",
+    "@typescript-eslint/parser": "1.6.0",
+    "babel-jest": "24.3.1",
+    "commitizen": "3.0.7",
+    "coveralls": "3.0.3",
+    "cz-conventional-changelog": "2.1.0",
+    "jest": "24.3.1",
+    "rimraf": "2.6.3",
+    "rollup": "0.66.6",
+    "rollup-all": "1.5.2",
+    "rollup-plugin-babel": "4.3.2",
+    "rollup-plugin-node-resolve": "3.4.0",
+    "rollup-plugin-uglify": "6.0.2",
+    "semantic-release": "^15.13.3",
+    "tslint": "5.15.0",
+    "typescript": "3.3.3333"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/harrison-ifeanyichukwu/utils.git"
+  },
+  "dependencies": {
+    "@forensic-js/utils": "1.0.2"
+  }
+}

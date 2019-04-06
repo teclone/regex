@@ -1,0 +1,15 @@
+{
+    "srcDir": "src",
+    "mainModuleFileName": "index.ts",
+    "mainModuleName": "Utils",
+    "fileExtensions": [
+        ".ts", ".js"
+    ],
+    "libConfig": {
+        "enabled": true
+    },
+    "distConfig": {
+        "enabled": true,
+        "uglify": true
+    }
+}
