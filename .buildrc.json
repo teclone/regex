@@ -1,7 +1,7 @@
 {
     "srcDir": "src",
     "mainModuleFileName": "index.ts",
-    "mainModuleName": "Utils",
+    "mainModuleName": "Regex",
     "fileExtensions": [
         ".ts", ".js"
     ],
