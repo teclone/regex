@@ -1,7 +1,7 @@
 {
   "name": "@forensic-js/regex",
   "version": "0.0.0",
-  "description": "Acollection of utility methods useful for day to day project and library development",
+  "description": "A module that builds on the existing `RegExp` module, making it easier working with text matching and replacment in JavaScript both in the `browser` and in `Node.JS` environment",
   "main": "lib/index",
   "typings": "typings/index",
   "publishConfig": {
@@ -49,7 +49,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/harrison-ifeanyichukwu/utils.git"
+    "url": "https://github.com/harrison-ifeanyichukwu/regex.git"
   },
   "dependencies": {
     "@forensic-js/utils": "1.0.2"
