@@ -45,7 +45,7 @@
     "rollup-plugin-commonjs": "9.3.4",
     "rollup-plugin-node-resolve": "3.4.0",
     "rollup-plugin-uglify": "6.0.2",
-    "semantic-release": "15.13.12",
+    "semantic-release": "15.13.14",
     "typescript": "3.3.3333"
   },
   "config": {
@@ -58,6 +58,6 @@
     "url": "https://github.com/harrison-ifeanyichukwu/regex.git"
   },
   "dependencies": {
-    "@forensic-js/utils": "1.5.2"
+    "@forensic-js/utils": "2.0.0"
   }
 }
