@@ -1,9 +1,10 @@
 {
-  "name": "@forensic-js/regex",
-  "version": "0.0.0",
+  "name": "@teclone/regex",
+  "version": "0.0.0-development",
   "description": "A module that builds on the existing RegExp module, making it easier working with text matching and replacement both in the browser and node environments",
-  "main": "lib/index",
-  "typings": "lib/typings/index",
+  "main": "build/index",
+  "typings": "build/index",
+  "module": "build/esm/index",
   "publishConfig": {
     "access": "public"
   },
@@ -11,7 +12,8 @@
     "commit": "git-cz",
     "test": "BABEL_ENV=test jest",
     "watch-test": "BABEL_ENV=test jest --watch",
-    "build": "rimraf dist lib && tsc && BABEL_ENV=build rollup --config",
+    "typings": "tsc --p ./tsconfig.build.json",
+    "build": "rimraf build && yarn typings --declarationDir ./build && yarn typings --declarationDir ./build/esm && rollup-all",
     "report-coverage": "jest --coverage --coverageReporters=text-lcov | coveralls",
     "semantic-release": "semantic-release"
   },
@@ -30,6 +32,7 @@
     "@babel/plugin-proposal-object-rest-spread": "^7.4.0",
     "@babel/preset-env": "7.4.0",
     "@babel/preset-typescript": "7.3.3",
+    "@teclone/rollup-all": "1.10.8",
     "@types/jest": "24.0.11",
     "@typescript-eslint/eslint-plugin": "1.6.0",
     "@typescript-eslint/parser": "1.6.0",
@@ -39,13 +42,8 @@
     "cz-conventional-changelog": "2.1.0",
     "jest": "24.3.1",
     "rimraf": "2.6.3",
-    "rollup": "0.66.6",
-    "rollup-all": "1.6.8",
-    "rollup-plugin-babel": "4.3.2",
-    "rollup-plugin-commonjs": "9.3.4",
-    "rollup-plugin-node-resolve": "3.4.0",
-    "rollup-plugin-uglify": "6.0.2",
-    "semantic-release": "15.13.14",
+    "semantic-release": "^17.0.4",
+    "semantic-release-cli": "5.2.3",
     "typescript": "3.3.3333"
   },
   "config": {
@@ -55,9 +53,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/harrison-ifeanyichukwu/regex.git"
+    "url": "https://github.com/teclone/regex.git"
   },
   "dependencies": {
-    "@forensic-js/utils": "2.0.0"
+    "@teclone/utils": "2.14.4"
   }
 }
