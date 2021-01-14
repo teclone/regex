@@ -32,7 +32,8 @@
     "@babel/plugin-proposal-object-rest-spread": "^7.4.0",
     "@babel/preset-env": "7.4.0",
     "@babel/preset-typescript": "7.3.3",
-    "@teclone/rollup-all": "1.10.8",
+    "@teclone/rollup-all": "^1.12.11",
+    "@teclone/utils": "^2.22.2",
     "@types/jest": "24.0.11",
     "@typescript-eslint/eslint-plugin": "1.6.0",
     "@typescript-eslint/parser": "1.6.0",
@@ -54,8 +55,5 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/teclone/regex.git"
-  },
-  "dependencies": {
-    "@teclone/utils": "2.14.4"
   }
 }
